@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "gen": "sh ./fileGenerator.sh"
+  },
   "devDependencies": {
     "@types/node": "^20.4.1",
     "tslint": "^6.1.3",
