@@ -5,7 +5,8 @@
     // "outDir": "dist", // outDir: 생성된 자바스크립트 코드를 출력할 디렉터리. 따로 설정 안하면 .ts파일 동일 레벨에 생성된다. "dist"라고 하면 동일 레벨에 "dist"이름 폴더 안에 js파일들 모아서 생성된다.
     "sourceMap": true, // sourceMap: js파일과 ts파일 코드를 연결하는 매핑 파일(소스맵) 제공. 있으면 디버깅에 유리. default: false
     "strict": true, // strict: 타입 시스템을 강제.true로 권장됨.
-    "target": "ES2015" // target: tsc가 코드를 컴파일할 자바스크립트 버전
+    "target": "ES2015", // target: tsc가 코드를 컴파일할 자바스크립트 버전
+    "noImplicitAny": true
   },
   "include": ["src"] // include: tsc가 타입스크립트 파일을 찾을 디렉토리
 }
