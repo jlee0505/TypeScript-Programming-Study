@@ -1,4 +1,7 @@
 #!/bin/bash
+
+cd ./src
+
 echo "단원명을 ch-# 식으로 입력해주세요. ex) ch-1"
 
 read chapter
@@ -13,5 +16,8 @@ else
         cd ./$chapter
         touch $chapter.md
         touch $chapter.ts
+        echo "$chapter 단원명을 입력해 주세요. " 
+        read title
+        echo "# $title" >> $chapter.md
     fi
 fi
